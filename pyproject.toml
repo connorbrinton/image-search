@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "image-search"
+version = "0.1.0"
+description = ""
+authors = ["Connor Brinton <connor@brintonium.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+typer = "^0.15.1"
+chromadb = "^0.5.23"
+gradio = "^5.8.0"
+tqdm = "^4.67.1"
+pillow = "^11.0.0"
+numpy = "^2.2.0"
+open-clip-torch = "^2.29.0"
+rich = "^13.9.4"
+platformdirs = "^4.3.6"
+diskcache = "^5.6.3"
+
+[tool.poetry.scripts]
+image-search = "image_search.cmd.search:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
